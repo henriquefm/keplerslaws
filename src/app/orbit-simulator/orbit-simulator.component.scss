@@ -1,0 +1,52 @@
+
+#main-container {
+  height: calc(100% - 24px);
+  display: flex;
+}
+
+
+.graph {
+  background-color: black;
+  width: 100%;
+  height: 100;
+}
+
+.mainOrbit {
+  fill:transparent;
+  stroke:white;
+  stroke-width:2
+}
+
+.sun {
+  fill: #f4d03f;
+  stroke-width:2
+}
+
+
+.planet {
+  fill: deepskyblue;
+  stroke-width:2
+}
+
+.emptyFocus {
+  fill: blueviolet;
+  stroke-width:2
+}
+
+.center {
+  fill: lime;
+  stroke-width:2
+}
+
+.hidden {
+  display: none;
+}
+
+.semiminoraxis, .semimajoraxis {
+  stroke-width: 1px;
+  stroke: white;
+}
+
+.currentSweep, .previousSweeps {
+  z-index: -1;
+}

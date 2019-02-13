@@ -1,0 +1,25 @@
+
+
+.slider-wrapper {
+  display: flex;
+  margin: 8px 0;
+
+  mat-slider {
+    width: 100%;
+  }
+}
+
+
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  button, mat-button-toggle {
+    margin: 4px 0;
+  }
+}
+
+
+.checkbox-wrapper {
+  margin: 8px 0;
+}

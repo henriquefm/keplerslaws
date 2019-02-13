@@ -1,0 +1,16 @@
+
+<mat-checkbox
+  [checked]="showEmptyFocus$ | async"
+  (change)="onShowEmptyFocusChanged($event.checked)">Show empty focus <span class="dot empty-focus"></span></mat-checkbox>
+
+<mat-checkbox
+  [checked]="showCenter$ | async"
+  (change)="onShowCenterChanged($event.checked)">Show center <span class="dot center"></span></mat-checkbox>
+
+<mat-checkbox
+  [checked]="showSemiminoraxis$ | async"
+  (change)="onShowSemiminoraxisChanged($event.checked)">Show semi-minor axis</mat-checkbox>
+
+<mat-checkbox
+  [checked]="showSemimajoraxis$ | async"
+  (change)="onShowSemimajoraxisChanged($event.checked)">Show semi-major axis</mat-checkbox>

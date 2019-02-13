@@ -1,0 +1,53 @@
+<!-- <mat-form-field class="select-wrapper">
+  <mat-select [(value)]="lawSelected">
+    <mat-option *ngFor="let law of laws" [value]="law">
+      {{ law.shortname }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+ -->
+
+
+
+<mat-accordion multi="true">
+
+  <mat-expansion-panel expanded="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Laws
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <kl-law-settings></kl-law-settings>
+
+  </mat-expansion-panel>
+
+
+  <mat-expansion-panel expanded="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Animation controls
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <kl-animation-settings></kl-animation-settings>
+
+  </mat-expansion-panel>
+
+
+
+  <mat-expansion-panel expanded="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Orbit settings
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+
+    <kl-orbit-settings></kl-orbit-settings>
+
+  </mat-expansion-panel>
+
+
+</mat-accordion>
