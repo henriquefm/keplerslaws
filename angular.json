@@ -10,7 +10,7 @@
       "prefix": "kl",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "styleext": "scss"
         }
       },
       "architect": {
@@ -27,6 +27,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
             "scripts": [],

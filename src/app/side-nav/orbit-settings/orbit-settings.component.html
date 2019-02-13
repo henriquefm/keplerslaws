@@ -1,0 +1,22 @@
+<mat-form-field class="select-wrapper">
+  <mat-select [value]="planet$ | async" (selectionChange)="onPlanetSelected($event.value)" [disabled]=" isSweeping$ | async ">
+    <mat-option *ngFor="let planet of planets" [value]="planet">
+      {{ planet.name }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<div class="slider-wrapper">
+  <div class="label-wrapper">
+    <div class="label">Eccentricity</div>
+    <div>{{ eccentricity$ | async }}</div>
+  </div>
+  <mat-slider min="0"
+              max="0.975"
+              [disabled]=" isSweeping$ | async "
+              step="0.001"
+              [value]="eccentricity$ | async"
+              (input)="onOrbitEccentricityChanged($event.value)"
+              ></mat-slider>
+
+</div>
